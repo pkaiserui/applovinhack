@@ -1,3 +1,6 @@
+#Twiffsy
+![](/logo/Desktop.png)
+
 ##Getting Started
 To run the server:
 
@@ -11,7 +14,7 @@ Then, build and run the xcode.
 
 I used the following resources for this:
 
-https://www.raywenderlich.com/114886/beginning-tvos-development-with-tvml-tutorial 
+https://www.raywenderlich.com/114886/beginning-tvos-development-with-tvml-tutorial
 
 This tutorial provides a step by step walkthrough of setting up a TVML app.
 
