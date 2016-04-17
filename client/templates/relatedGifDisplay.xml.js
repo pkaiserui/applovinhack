@@ -1,6 +1,7 @@
 var Template = function (options) {
   console.log(options)
   var prev = options.url;
+  var tags = options.tags
 
   var generateMediumImageLockups = function (data) {
     var tags = data.tags.reduce(function (allTags, tag) {
@@ -72,8 +73,15 @@ var Template = function (options) {
         width: 650;
         height: 400;
       }
+      .tweetLockUp {
+        padding-left: 100;
+      }
       .tweetButton {
         width: 400;
+        height: 200;
+      }
+      .tags {
+        width: 700;
         height: 200;
       }
       </style>
@@ -82,14 +90,18 @@ var Template = function (options) {
       <collectionList>
         <grid>
           <section>
+          
+
             <lockup>
               <img src="${prev}" class="selectedGif" />
-              <title>Title 1</title>
+              <title>${tags}</title>
             </lockup>
-            <lockup>
+            <lockup class="tweetLockUp">
               <img src="https://image.freepik.com/free-icon/twitter-logo_318-40209.jpg" class="tweetButton"/>
               <title>Tweet It!</title>
             </lockup>
+            
+
           </section>
         </grid>
         // ${sections}
